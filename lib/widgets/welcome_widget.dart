@@ -26,7 +26,7 @@ class WelcomeWidget extends StatelessWidget {
           height: 120.h,
           width: double.infinity,
           decoration: BoxDecoration(
-            color: AppColors.background,
+            color: Colors.white,
             borderRadius: BorderRadius.circular(12.r),
           ),
           child: Icon(
