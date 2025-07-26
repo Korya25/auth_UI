@@ -26,7 +26,7 @@ class HeaderWidget extends StatelessWidget {
         // Illustration placeholder
         Image.asset('assets/login_image.png', fit: BoxFit.cover),
 
-        SizedBox(height: 24.h),
+        SizedBox(height: 18.h),
         Text(
           title,
           style: GoogleFonts.titilliumWeb(
@@ -35,7 +35,7 @@ class HeaderWidget extends StatelessWidget {
             color: AppColors.textPrimary,
           ),
         ),
-        SizedBox(height: 8.h),
+        SizedBox(height: 4.h),
         Text(
           subtitle,
           style: GoogleFonts.titilliumWeb(

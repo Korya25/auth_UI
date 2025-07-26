@@ -1,4 +1,6 @@
+import 'package:auth_ui/refactors/login_form.dart';
 import 'package:auth_ui/widgets/header_widget.dart';
+import 'package:auth_ui/widgets/terms_checkbox.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -33,6 +35,17 @@ class TopBackgroundBody extends StatelessWidget {
       children: [
         //welcome
         HeaderWidget(),
+        SizedBox(height: 20.h),
+
+        LoginForm(),
+        SizedBox(height: 8.h),
+
+        TermsCheckbox(
+          value: false,
+          onChanged: (val) => {},
+          onTermsTap: () {},
+          onPrivacyTap: () {},
+        ),
       ],
     );
   }
