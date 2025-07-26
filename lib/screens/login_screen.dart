@@ -40,7 +40,7 @@ class LoginBody extends StatelessWidget {
           top: 0,
           left: 0,
           right: 0,
-          child: FadeInDown(
+          child: FadeInDownBig(
             duration: const Duration(seconds: 1),
             child: TopBackgroundWidget(),
           ),
@@ -50,7 +50,7 @@ class LoginBody extends StatelessWidget {
           bottom: 0,
           left: 0,
           right: 0,
-          child: FadeInUp(
+          child: FadeInUpBig(
             duration: const Duration(seconds: 1),
             child: BottomBackgroundWidget(),
           ),
