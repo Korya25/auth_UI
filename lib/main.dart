@@ -22,12 +22,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: Size(375, 812),
+      designSize: Size(414, 896),
       minTextAdapt: true,
       splitScreenMode: true,
 
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        // ignore: deprecated_member_use
         useInheritedMediaQuery: true,
         locale: DevicePreview.locale(context),
         builder: DevicePreview.appBuilder,

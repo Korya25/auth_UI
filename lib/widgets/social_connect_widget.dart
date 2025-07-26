@@ -24,7 +24,7 @@ class SocialConnectWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<Map<String, dynamic>> _socialButtons = [
+    final List<Map<String, dynamic>> socialButtons = [
       {
         "icon": FontAwesomeIcons.facebookF,
         "color": const Color(0xFF4267B2),
@@ -54,7 +54,7 @@ class SocialConnectWidget extends StatelessWidget {
         SizedBox(height: spacing.h),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: _socialButtons
+          children: socialButtons
               .map(
                 (item) => Padding(
                   padding: EdgeInsets.symmetric(horizontal: 8.w),
