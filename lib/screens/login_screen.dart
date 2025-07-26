@@ -3,8 +3,6 @@ import 'package:auth_ui/refactors/bottom_background_widget.dart';
 import 'package:auth_ui/refactors/top_background_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

@@ -12,7 +12,7 @@ class CustomTextButton extends StatelessWidget {
   const CustomTextButton({
     super.key,
     this.onTap,
-    this.title = "Forgot password",
+    this.title = "Forgot password ?",
     this.style,
     this.alignmentGeometry,
   });
@@ -28,7 +28,8 @@ class CustomTextButton extends StatelessWidget {
           style:
               style ??
               GoogleFonts.titilliumWeb(
-                fontSize: 14.sp,
+                fontSize: 16.sp,
+                fontWeight: FontWeight.w500,
                 color: AppColors.primary,
               ),
         ),

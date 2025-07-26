@@ -46,7 +46,7 @@ class TermsCheckbox extends StatelessWidget {
                   style: GoogleFonts.titilliumWeb(
                     fontSize: 14.sp,
                     color: AppColors.backgrounddark,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w500,
                   ),
                   recognizer: TapGestureRecognizer()..onTap = onTermsTap,
                 ),
@@ -55,7 +55,7 @@ class TermsCheckbox extends StatelessWidget {
                   style: GoogleFonts.titilliumWeb(
                     fontSize: 14.sp,
                     color: AppColors.textSecondary,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
                 TextSpan(
@@ -63,7 +63,7 @@ class TermsCheckbox extends StatelessWidget {
                   style: GoogleFonts.titilliumWeb(
                     fontSize: 14.sp,
                     color: AppColors.backgrounddark,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w500,
                   ),
                   recognizer: TapGestureRecognizer()..onTap = onPrivacyTap,
                 ),
