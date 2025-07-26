@@ -1,7 +1,10 @@
 import 'package:auth_ui/constants/app_colors.dart';
+import 'package:auth_ui/refactors/bottom_background_widget.dart';
+import 'package:auth_ui/refactors/top_background_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:animate_do/animate_do.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -19,7 +22,10 @@ class LoginScreen extends StatelessWidget {
             colors: [AppColors.backgroundLight, AppColors.backgrounddark],
           ),
         ),
-        child: const LoginBody(),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 5),
+          child: const LoginBody(),
+        ),
       ),
     );
   }
@@ -37,12 +43,8 @@ class LoginBody extends StatelessWidget {
           left: 0,
           right: 0,
           child: FadeInDown(
-            duration: const Duration(milliseconds: 1000),
-            child: Image.asset(
-              'assets/Rectangle_top.png',
-              fit: BoxFit.cover,
-              width: double.infinity,
-            ),
+            duration: const Duration(seconds: 1),
+            child: TopBackgroundWidget(),
           ),
         ),
 
@@ -51,12 +53,8 @@ class LoginBody extends StatelessWidget {
           left: 0,
           right: 0,
           child: FadeInUp(
-            duration: const Duration(milliseconds: 1000),
-            child: Image.asset(
-              'assets/Rectangle_buttom.png',
-              fit: BoxFit.cover,
-              width: double.infinity,
-            ),
+            duration: const Duration(seconds: 1),
+            child: BottomBackgroundWidget(),
           ),
         ),
       ],

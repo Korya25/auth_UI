@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class WelcomeWidget extends StatelessWidget {
+class HeaderWidget extends StatelessWidget {
   final String title;
   final String subtitle;
   final String termsText;
   final VoidCallback? onTermsTap;
 
-  const WelcomeWidget({
+  const HeaderWidget({
     super.key,
     this.title = "Welcome",
     this.subtitle = "By signing in you are agreeing our",
@@ -21,20 +21,11 @@ class WelcomeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        SizedBox(height: 20.h),
+
         // Illustration placeholder
-        Container(
-          height: 120.h,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(12.r),
-          ),
-          child: Icon(
-            Icons.people_outline,
-            size: 60.w,
-            color: AppColors.primary,
-          ),
-        ),
+        Image.asset('assets/login_image.png', fit: BoxFit.cover),
+
         SizedBox(height: 24.h),
         Text(
           title,
